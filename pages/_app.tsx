@@ -15,7 +15,7 @@ const GlobalStyle = createGlobalStyle`
     flex-direction: column;
     font-family: 'Cinzel Decorative', cursive;
     // Deixa branco no começo
-    color: ${({ theme }) => theme.colors.contrastText};
+    color: ${() => theme.colors.contrastText};
   }
   html, body {
     min-height: 100vh;
