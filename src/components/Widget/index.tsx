@@ -1,12 +1,10 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const Widget: any = styled.div`
   margin-top: 24px;
   margin-bottom: 24px;
   border: 1px solid ${({ theme }) => theme.colors.primary};
-  background-color: ${({ theme }) => {
-        return theme.colors.mainBg;
-    }};
+  background-color: ${({ theme }) => theme.colors.background};
   border-radius: 4px;
   overflow: hidden;
   h1, h2, h3 {
@@ -19,6 +17,10 @@ const Widget: any = styled.div`
     font-size: 1.3em;
     font-weight: 400;
     line-height: 1;
+  }
+  span {
+    font-size: 0.7em;
+    color: ${({ theme }) => theme.colors.contrastText};
   }
 `;
 

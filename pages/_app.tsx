@@ -1,7 +1,9 @@
-import { createGlobalStyle, ThemeProvider } from 'styled-components'
-import db from '../db.json'
+import React from 'react';
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import db from '../db.json';
+import HeadSection from '../src/components/HeadSection';
 
-const theme = db.theme
+const { theme } = db;
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -25,17 +27,16 @@ const GlobalStyle = createGlobalStyle`
     display: flex;
     flex-direction: column;
   }
-`
+`;
 
-const App = ({ Component, pageProps }) => {
-  return (
-    <>
-      <ThemeProvider theme={theme}>
-        <GlobalStyle />
-        <Component {...pageProps} />
-      </ThemeProvider>
-    </>
-  )
-}
+const App = ({ Component, pageProps }) => (
+  <>
+    <HeadSection />
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
+      <Component {...pageProps} />
+    </ThemeProvider>
+  </>
+);
 
 export default App;
