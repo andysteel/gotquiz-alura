@@ -68,7 +68,7 @@ const QuestionWidget = ({
         alt="Descrição"
         style={{
           width: '100%',
-          height: '15rem',
+          height: '11rem',
           objectFit: 'cover',
         }}
       />
