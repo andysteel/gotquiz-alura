@@ -4,25 +4,123 @@
     "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
     "questions": [
     {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
-        "description": "Essa é pra aquecer",
-        "answer": 2,
+        "image": "https://static.wikia.nocookie.net/agotmod/images/9/95/Kingrobert.jpg",
+        "title": "Qual animal matou Robert Baratheon ?",
+        "description": "",
+        "answer": 1,
         "alternatives": [
-            ".elemento",
-            "*elemento",
-            "#elemento",
-            "%elemento"
+            "Leão",
+            "Javali",
+            "Mamute",
+            "Lobo"
         ]
     },
     {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
+        "image": "https://www.magazine-hd.com/apps/wp/wp-content/uploads/2019/04/game-of-thrones-brienne-de-tarth.jpg",
+        "title": "Qual o lugar de origem de Brienne ?",
+        "description": "",
+        "answer": 2,
+        "alternatives": [
+            "Winterfell",
+            "Riverland",
+            "Tarth",
+            "Essos"
+        ]
+    },
+    {
+        "image": "https://the-take.com/images/uploads/screenprism/_constrain-1080w/game-of-thrones-the-nights-watch-wallpaper.jpg",
+        "title": "Quem foi o 997º Lord comandante da Patrulha da Noite ?",
+        "description": "",
+        "answer": 2,
+        "alternatives": [
+            "Amon Targaryen",
+            "Jon Snow",
+            "Jeor Mormont",
+            "Theon Greyjoy"
+        ]
+    },
+    {
+        "image": "https://i2-prod.mylondon.news/incoming/article9987995.ece/ALTERNATES/s810/0_thrones26tvf-3-web.jpg",
+        "title": "Qual o nome do episódio que aconteceu o Casamento Vermelho ?",
+        "description": "",
+        "answer": 1,
+        "alternatives": [
+            "The Lannister roar",
+            "The Rains of Castamere",
+            "The Red Wedding",
+            "The Frey's revenge"
+        ]
+    },
+    {
+        "image": "http://vignette3.wikia.nocookie.net/hieloyfuego/images/b/be/Lamento_de_Viuda_HBO.jpg",
+        "title": "Qual o nome da espada presenteada a Jofrey Baratheon pelo seu avô ?",
+        "description": "",
         "answer": 0,
         "alternatives": [
-            "background: linear-gradient(#e66465, #9198e5);",
-            "background: gradient(#e66465, #9198e5);"
+            "Lamento da Viúva",
+            "Dente de Leão",
+            "Devoradora de coração",
+            "Caçadora de recompensa"
+        ]
+    },
+    {
+        "image": "http://3.bp.blogspot.com/-vmr258Zpi0M/VkeEug1tcjI/AAAAAAAAAT4/JnQe6bRqfxI/s1600/Casa%2BGreyjoy%2Bpor%2BGARYCK%2BARNTZEN.jpg",
+        "title": "Qual o lema da casa Greyjoy ?",
+        "description": "",
+        "answer": 3,
+        "alternatives": [
+            "O que esta morto não pode morrer",
+            "Ouça me rugir",
+            "o deus afogado nunca morre",
+            "Nós não semeamos"
+        ]
+    },
+    {
+        "image": "http://4.bp.blogspot.com/-zRDBgrjgzXk/UYMEM-HrKGI/AAAAAAAAAdw/LzI0hyk8RzE/s1600/robb_stark_direwolf_pup.png",
+        "title": "Qual o nome do lobo de Robb Stark ?",
+        "description": "",
+        "answer": 3,
+        "alternatives": [
+            "Fantasma",
+            "Cão felpudo",
+            "Verão",
+            "Vento cinzento"
+        ]
+    },
+    {
+        "image": "https://i.insider.com/59654807aa40992c008b4588?width=700&format=jpeg&auto=webp",
+        "title": "Qual o lugar de origem de Melissandre ?",
+        "description": "",
+        "answer": 0,
+        "alternatives": [
+            "Ashai",
+            "Pentos",
+            "Braavos",
+            "Volantis"
+        ]
+    },
+    {
+        "image": "https://www.einerd.com.br/wp-content/uploads/2020/10/Game-of-Thrones-Hodor-capa-890x466.jpg",
+        "title": "Qual o nome real do Hodor ?",
+        "description": "",
+        "answer": 2,
+        "alternatives": [
+            "Rickon",
+            "Samuel",
+            "Wylis",
+            "Rhaegar"
+        ]
+    },
+    {
+        "image": "https://ibcdn.canaltech.com.br/a-zX_fW0y8RGT4RiyWxFX-wWlzo=/512x288/smart/i350335.jpeg",
+        "title": "Quem disse a frase: 'O caos é uma escada' ?",
+        "description": "",
+        "answer": 1,
+        "alternatives": [
+            "Tyrion Lannister",
+            "Little Finger",
+            "Danerys Targaryen",
+            "Varys"
         ]
     }
     ],
