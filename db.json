@@ -127,6 +127,10 @@
     "external": [
         ""
     ],
+    "resultImages": {
+        "passed": "https://www.einerd.com.br/wp-content/uploads/2019/04/arya-stark-game-of-thrones.jpeg",
+        "fail": "https://conteudo.imguol.com.br/c/entretenimento/32/2017/06/15/o-rei-da-noite-comanda-seu-exercito-de-white-walkers-em-cena-da-quinta-temporada-de-game-of-thrones-1497568895176_v2_1200x640.jpg"
+    },
     "theme": {
         "colors": {
             "primary": "#916448",

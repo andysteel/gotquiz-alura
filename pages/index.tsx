@@ -16,7 +16,8 @@ const InputPlayer = styled.input`
   border: 1px solid ${({ theme }) => theme.colors.primary};
   width: 100%;
   height: 3em;
-  color: ${db.theme.colors.contrastText}
+  color: ${db.theme.colors.contrastText};
+  padding: 10px;
 `;
 
 const Home = () => {
