@@ -125,7 +125,9 @@
     }
     ],
     "external": [
-        ""
+        { "link": "https://alura-quiz.luizf-lf.vercel.app/" },
+        { "link": "https://quiz.rafalmeida73.vercel.app/" },
+        { "link": "https://lotr-quiz.filipe1309.vercel.app/" }
     ],
     "resultImages": {
         "passed": "https://www.einerd.com.br/wp-content/uploads/2019/04/arya-stark-game-of-thrones.jpeg",

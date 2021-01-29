@@ -57,6 +57,20 @@ const Home = () => {
               <span>
                 Dá uma olhada nesses quizes incríveis que o pessoal da Imersão React/NextJS fez:
               </span>
+              {db.external.map((external, index) => {
+                const [projectName, githubUser] = external.link.replace(/\//g, '')
+                  .replace('https:', '')
+                  .replace('.vercel.app', '')
+                  .split('.');
+                return (
+                  <Widget.Topic
+                    key={`external__${index}`}
+                    href={external.link}
+                  >
+                    {`${githubUser}/${projectName}`}
+                  </Widget.Topic>
+                );
+              })}
             </Widget.Content>
           </Widget>
           <Footer />
