@@ -15,14 +15,15 @@ import errorAnimation from './animation/14651-error-animation.json';
 import okAnimation from './animation/33886-check-okey-done.json';
 
 interface ResultProps {
-  nota: number,
-  passed: boolean
+  results: Array<boolean>
 }
 
-const ResultWidget = ({ nota, passed }: ResultProps) => {
+const ResultWidget = ({ results }: ResultProps) => {
   const router = useRouter();
   const { name } = router.query;
-
+  const nota = results.filter((result) => result)
+    .reduce((somatoria, result) => somatoria + 1, 0);
+  const passed = nota >= 7;
   const resultImage = passed ? db.resultImages.passed : db.resultImages.fail;
   return (
     <Widget>
@@ -227,8 +228,6 @@ const QuizScreen = ({ externalQuestions, externalBg }: QuizScreenProps) => {
   const [screenState, setScreenState] = React.useState<ScreenState>(ScreenState.LOADING);
   const [results, setResults] = React.useState<Array<boolean>>([]);
   const [questionIndex, setQuestionIdex] = React.useState<number>(0);
-  const [nota, setNota] = React.useState<number>(undefined);
-  const [passed, setPassed] = React.useState<boolean>(undefined);
   const question = externalQuestions[questionIndex];
   const totalQuestions = externalQuestions.length;
   const addResult = (result: boolean) => {
@@ -248,11 +247,6 @@ const QuizScreen = ({ externalQuestions, externalBg }: QuizScreenProps) => {
     if (nextQuestion < totalQuestions) {
       setQuestionIdex(nextQuestion);
     } else {
-      const soma = results.filter((result) => result)
-        .reduce((somatoria, result) => somatoria + 1, 0);
-      const isAprovado = soma >= 7;
-      setNota(soma);
-      setPassed(isAprovado);
       setScreenState(ScreenState.RESULT);
     }
   };
@@ -272,7 +266,7 @@ const QuizScreen = ({ externalQuestions, externalBg }: QuizScreenProps) => {
           />
           )}
           {screenState === ScreenState.LOADING && <LoadingWidget />}
-          {screenState === ScreenState.RESULT && <ResultWidget nota={nota} passed={passed} />}
+          {screenState === ScreenState.RESULT && <ResultWidget results={results} />}
         </QuizContainer>
         <GitHubCorner projectUrl="https://github.com/andysteel" />
       </QuizBackground>
