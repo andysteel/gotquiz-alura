@@ -139,8 +139,8 @@
             "secondary": "#5e3115",
             "mainBg": "#171B35",
             "contrastText": "#FFFFFF",
-            "wrong": "#FF5722",
-            "success": "#4CAF50",
+            "wrong": "#d22e2e",
+            "success": "#21cb88",
             "background": "#040404"
         },
         "borderRadius": "4px"

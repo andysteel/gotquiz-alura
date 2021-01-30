@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
+import { motion } from 'framer-motion';
 import db from '../db.json';
 import Widget from '../src/components/Widget';
 import Footer from '../src/components/Footer';
@@ -28,7 +30,16 @@ const Home = () => {
       <QuizBackground backgroundImage={db.bg}>
         <QuizContainer>
           <QuizLogo />
-          <Widget>
+          <Widget
+            as={motion.section}
+            transition={{ delay: 0, duration: 0.5 }}
+            variants={{
+              show: { opacity: 1, y: '0' },
+              hidden: { opacity: 0, y: '100%' },
+            }}
+            initial="hidden"
+            animate="show"
+          >
             <Widget.Header>
               <h1>Game of Thrones</h1>
             </Widget.Header>
@@ -51,7 +62,16 @@ const Home = () => {
               </form>
             </Widget.Content>
           </Widget>
-          <Widget>
+          <Widget
+            as={motion.section}
+            transition={{ delay: 0, duration: 0.5 }}
+            variants={{
+              show: { opacity: 1, y: '0' },
+              hidden: { opacity: 0, y: '100%' },
+            }}
+            initial="hidden"
+            animate="show"
+          >
             <Widget.Content>
               <p>Quizes da Galera</p>
               <span>
@@ -63,12 +83,14 @@ const Home = () => {
                   .replace('.vercel.app', '')
                   .split('.');
                 return (
-                  <Widget.Topic
+                  <Link
                     key={`external__${index}`}
-                    href={external}
+                    href={`/quiz/${projectName}___${githubUser}`}
                   >
-                    {`${githubUser}/${projectName}`}
-                  </Widget.Topic>
+                    <Widget.Topic>
+                      {`${githubUser}/${projectName}`}
+                    </Widget.Topic>
+                  </Link>
                 );
               })}
             </Widget.Content>
